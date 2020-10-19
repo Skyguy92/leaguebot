@@ -31,6 +31,11 @@
             <artifactId>discord4j-core</artifactId>
             <version>3.0.15</version>
         </dependency>
+        <dependency>
+            <groupId>com.merakianalytics.orianna</groupId>
+            <artifactId>orianna</artifactId>
+            <version>4.0.0-rc7</version>
+        </dependency>
     </dependencies>
 
 </project>
