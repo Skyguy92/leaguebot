@@ -18,7 +18,12 @@ public class Register {
         );
 
         Main.commands.put("mastery", event -> event.getMessage().getChannel()
-                .flatMap(messageChannel -> messageChannel.createMessage(Mastery.getMastery(event)))
+                .flatMap(messageChannel -> messageChannel.createEmbed(Mastery.getMastery(event)))
+                .then()
+        );
+
+        Main.commands.put("free", event -> event.getMessage().getChannel()
+                .flatMap(messageChannel -> messageChannel.createMessage(Free.rotation()))
                 .then()
         );
     }
