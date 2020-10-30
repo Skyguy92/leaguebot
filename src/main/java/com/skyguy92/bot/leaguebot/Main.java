@@ -22,6 +22,7 @@ public class Main {
     private static final char prefix = '!';
 
     public static void main(String[] args) {
+
         Orianna.setRiotAPIKey(args[1]);
         Orianna.setDefaultRegion(Region.NORTH_AMERICA);
 
